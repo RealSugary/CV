@@ -1,0 +1,88 @@
+<resources>
+
+    <string name="app_name">CC OfferGod</string>
+
+    // Login Screen
+    <string name="login_screen">Login Screen</string>
+    <string name="text_input_username">Username</string>
+    <string name="text_input_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="app_logo">CC OfferGod Logo</string>
+
+    // Main Menu
+    <string name="main_menu">Main Menu</string>
+    <string name="btn_offer_record">Offer Record</string>
+    <string name="btn_nonjupas_info">Non-Jupas Information</string>
+    <string name="btn_gpa_calculator">GPA Calculator</string>
+    <string name="btn_logout">Logout Button</string>
+
+    // Offer Record
+    <string name="offer_record">Offer Record</string>
+    <string name="offer_query">Offer Query</string>
+    <string name="offer_report">Offer Report</string>
+    <string name="btn_dus">Different University Standard</string>
+    <string name="btn_nue">Number of University Entry</string>
+    <string name="btn_sap">Search through Asso Program</string>
+    <string name="btn_sup">Search through University Program</string>
+    <string name="btn_stat">Statistics Summary of CGPA in Different Universities by Year</string>
+
+    // >>>>>>>>>>> Search through Asso Program
+    <string name="offer_sap">Search through Asso Program</string>
+    <string name="spinner_sapheader">Asso Programme :</string>
+    <string name="tv_uprogram">University\nProgram</string>
+
+    // >>>>>>>>>>> Search through University Program
+    <string name="offer_sup">Search through University Program</string>
+    <string name="spinner_supheader">University Programme :</string>
+    <string name="tv_assoprogram">Asso\nProgram</string>
+
+    // >>>>>>>>>>> Number of University Entry
+    <string name="offer_nue">Number of University Entry</string>
+    <string name="tv_nue">Number of Entry</string>
+
+    // >>>>>>>>>>> Statistics Summary of CGPA in Different Universities by Year
+    <string name="offer_stat">Statistics Summary of CGPA\nin Different Universities by Year</string>
+    <string name="tv_year">Year</string>
+
+
+    // GPA Calculator
+    <string name="gpa_calculator">GPA Calculator</string>
+    <string name="tv_sem1">Semaster 1:</string>
+    <string name="tv_sem2">Semaster 2:</string>
+    <string name="tv_sem3">Semaster 3:</string>
+    <string name="tv_sem4">Semaster 4:</string>
+    <string name="text_input_sem1">GPA</string>
+    <string name="text_input_sem2">GPA</string>
+    <string name="text_input_sem3">GPA</string>
+    <string name="text_input_sem4">GPA</string>
+    <string name="tv_cgpa">Your CGPA is </string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="btn_clear">Clear</string>
+
+    // Non-Jupas Information
+    <string name="nonjupas_info">Non-Jupas Information</string>
+    <string name="tv_header">2018-19 Non–Jupas Information</string>
+    <string name="btn_cityu">CityU\nEarly round deadline: 15 Nov 2018\nRegular round deadline: 3 Jan 2019</string>
+    <string name="btn_cuhk">CUHK\nEarly round deadline: 15 Nov 2018\nRegular round deadline: 20 Feb 2019</string>
+    <string name="btn_hkbu">HKBU\nEarly round deadline: 30 Nov 2018\nRegular round deadline: 2 Jan 2019</string>
+    <string name="btn_hku">HKU\nMain round deadline: 20 Nov 2018</string>
+    <string name="btn_hkust">HKUST\nEarly round deadline: 15 Nov 2018\nRegular round deadline: 7 Jan 2019</string>
+    <string name="btn_polyu">PolyU\nMain round deadline: 11 Feb 2019</string>
+    <string name="logo_cityu">CityU Logo</string>
+    <string name="logo_cuhk">CUHK Logo</string>
+    <string name="logo_hkbu">HKBU Logo</string>
+    <string name="logo_hku">HKU Logo</string>
+    <string name="logo_hkust">HKUST Logo</string>
+    <string name="logo_polyu">PolyU Logo</string>
+
+    // Webrowser
+    <string name="webroswer">Webrowser</string>
+
+    // Universal
+    <string name="btn_back">Backward Button</string>
+    <string name="tv_uname">University</string>
+    <string name="tv_avg">Average\nCGPA</string>
+    <string name="tv_mini">Minimum\nCGPA</string>
+    <string name="tv_max">Maximum\nCGPA</string>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hkcc.ccn2279.cc_offergod">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/cc_offergod_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/cc_offergod_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".LoginScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainMenu"
+            android:label="@string/main_menu" >
+        </activity>
+
+        <activity android:name=".OfferRecord"
+            android:label="@string/offer_record" >
+        </activity>
+
+        <activity android:name=".OfferSAP"
+            android:label="@string/offer_sap" >
+        </activity>
+
+        <activity android:name=".OfferSUP"
+            android:label="@string/offer_sup" >
+        </activity>
+
+        <activity android:name=".OfferNUE"
+            android:label="@string/offer_nue" >
+        </activity>
+
+        <activity android:name=".OfferSTAT"
+            android:label="@string/offer_stat" >
+        </activity>
+
+        <activity android:name=".GPACalculator"
+            android:label="@string/gpa_calculator" >
+        </activity>
+
+        <activity android:name=".NonJupasInfo"
+            android:label="@string/nonjupas_info" >
+        </activity>
+
+        <activity android:name=".Webrowser"
+            android:label="@string/webroswer" >
+        </activity>
+
+    </application>
+
+</manifest>

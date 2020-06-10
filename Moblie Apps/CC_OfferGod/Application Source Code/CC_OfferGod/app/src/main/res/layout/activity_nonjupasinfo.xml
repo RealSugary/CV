@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".NonJupasInfo" >
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <!-- Header: 2018-19 Non-Jupas Information -->
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_toStartOf="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/tv_header"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Backward Button -->
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_logout_40dp"
+            android:contentDescription="@string/btn_back"/>
+
+    </RelativeLayout>
+
+    <!-- Information Counter -->
+    <GridLayout
+        android:layout_weight="9.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:rowCount="3"
+        android:columnCount="1"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false" >
+
+        <!-- Row 1 CityU -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_cityu"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/colorWhite" >
+
+            <!-- Link to CityU Non-Jupas -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/logo_cityu"
+                    android:contentDescription="@string/logo_cityu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/btn_cityu"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Row 2 CUHK-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_cuhk"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/colorWhite" >
+
+            <!-- Link to CUHK Non-Jupas -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/logo_cuhk"
+                    android:contentDescription="@string/logo_cuhk"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/btn_cuhk"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Row 3 HKBU-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_hkbu"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/colorWhite" >
+
+            <!-- Link to HKBU Non-Jupas -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/logo_hkbu"
+                    android:contentDescription="@string/logo_hkbu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/btn_hkbu"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Row 4 HKU-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_hku"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/colorWhite" >
+
+            <!-- Link to HKU Non-Jupas -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/logo_hku"
+                    android:contentDescription="@string/logo_hku"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/btn_hku"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Row 5 HKUST-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_hkust"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/colorWhite" >
+
+            <!-- Link to HKUST Non-Jupas -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/logo_hkust"
+                    android:contentDescription="@string/logo_hkust"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/btn_hkust"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Row 6 PolyU-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_polyu"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/colorWhite" >
+
+            <!-- Link to PolyU Non-Jupas -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/logo_polyu"
+                    android:contentDescription="@string/logo_polyu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/btn_polyu"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+</LinearLayout>

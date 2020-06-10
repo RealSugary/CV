@@ -1,0 +1,1020 @@
+[03-05-2020 05:55:23] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/new?token=0869b399275d4c5fb7958b20cf748c06
+[03-05-2020 05:55:24] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/new?token=0869b399275d4c5fb7958b20cf748c06 HTTP/1.1, Host: api.blockcypher.com, Accept: */*, Content-Type: application/json, User-Agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.4;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1f;curl=7.53.1), BlockCypher-Request-Id: Kyles-MacBook-Pro.local56865158852132360245, Content-Length: 143, , 
+[03-05-2020 05:55:24] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"inputs":[{"addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"]}],"outputs":[{"addresses":["mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"],"value":3000}]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 05:55:24] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 05:55:24] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/1.1 201 Created, Date: Sun, 03 May 2020 15:55:24 GMT, Content-Type: application/json, Content-Length: 1479, Connection: keep-alive, Set-Cookie: __cfduid=d864efbdfcbbd31869a7880195bf933dc1588521323; expires=Tue, 02-Jun-20 15:55:23 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Methods: GET, POST, PUT, DELETE, Access-Control-Allow-Origin: *, X-Ratelimit-Remaining: 196, CF-Cache-Status: DYNAMIC, Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", Server: cloudflare, CF-RAY: 58db2a80982c32e7-HKG, cf-request-id: 027cd8e45e000032e75abaf200000001, , 
+[03-05-2020 05:55:24] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "db5204e9be9731786c5dcd6b6bc40ca865e66028a7b701346b4ec968601506af",
+    "addresses": [
+      "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1",
+      "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"
+    ],
+    "total": 52400,
+    "fees": 22800,
+    "size": 119,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T15:55:24.422878865Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "1b6824e47a1ad512006a23406044c8d4712846382149fe237f38b0e6b2de53be",
+        "output_index": 1,
+        "output_value": 75200,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722779
+      }
+    ],
+    "outputs": [
+      {
+        "value": 3000,
+        "script": "76a91473085b71dc8d44637b29e23316146e97d336d14f88ac",
+        "addresses": [
+          "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 49400,
+        "script": "76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac",
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    "5e59f50ebaff9142bbdd84dffe5326404265d047096936f0328802f8b26aff89"
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 05:55:24] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 05:55:24] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:35:58] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/new?token=0869b399275d4c5fb7958b20cf748c06
+[03-05-2020 08:35:59] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/new?token=0869b399275d4c5fb7958b20cf748c06 HTTP/1.1, Host: api.blockcypher.com, Accept: */*, Content-Type: application/json, User-Agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.4;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1f;curl=7.53.1), BlockCypher-Request-Id: Kyles-MacBook-Pro.local64430158853095812958, Content-Length: 143, , 
+[03-05-2020 08:35:59] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"inputs":[{"addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"]}],"outputs":[{"addresses":["mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"],"value":3000}]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 08:35:59] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 08:35:59] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/1.1 201 Created, Date: Sun, 03 May 2020 18:35:59 GMT, Content-Type: application/json, Content-Length: 1898, Connection: keep-alive, Set-Cookie: __cfduid=d2dc79b786633adeb7dcb4228730071471588530958; expires=Tue, 02-Jun-20 18:35:58 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Methods: GET, POST, PUT, DELETE, Access-Control-Allow-Origin: *, X-Ratelimit-Remaining: 188, CF-Cache-Status: DYNAMIC, Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", Server: cloudflare, CF-RAY: 58dc15bcced4a294-HKG, cf-request-id: 027d6be9ff0000a294faa46200000001, , 
+[03-05-2020 08:35:59] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "02bb0f0fc5b7ab1444fe08e474f8a7baa7eb73d65e52a151fcd86b33a7e5e8f0",
+    "addresses": [
+      "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1",
+      "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"
+    ],
+    "total": 883600,
+    "fees": 37800,
+    "size": 160,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T18:35:59.60527058Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 2,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "1dfd11fb55d41255467a914aefb9e96785dcdd5cf076bee4841f5bce3e5fa1ff",
+        "output_index": 1,
+        "output_value": 25600,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722807
+      },
+      {
+        "prev_hash": "d6df4957010b0b826a42acf2ba4d68c4ae286d0bbc6363e373fdbbeef7aae480",
+        "output_index": 1,
+        "output_value": 895800,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722808
+      }
+    ],
+    "outputs": [
+      {
+        "value": 3000,
+        "script": "76a91473085b71dc8d44637b29e23316146e97d336d14f88ac",
+        "addresses": [
+          "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 880600,
+        "script": "76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac",
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    "ba0021c463b69c2585b5ec12413dc8bd0794f8203dc280168591f9467d41c753",
+    "8b8f7934b8a27684f7241f579ba871217f49bbe037dbf69c31839fac94edf7dc"
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 08:35:59] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:35:59] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 07:41:05] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/new?token=0869b399275d4c5fb7958b20cf748c06
+[03-05-2020 07:41:06] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/new?token=0869b399275d4c5fb7958b20cf748c06 HTTP/2, Host: api.blockcypher.com, accept: */*, content-type: application/json, user-agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.5;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1g;curl=7.70.0), blockcypher-request-id: Kyles-MacBook-Pro.local74744158853486511455, content-length: 143, , 
+[03-05-2020 07:41:06] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"inputs":[{"addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"]}],"outputs":[{"addresses":["mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"],"value":3000}]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 07:41:06] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 07:41:06] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/2 201 , date: Sun, 03 May 2020 19:41:06 GMT, content-type: application/json, content-length: 1482, set-cookie: __cfduid=d0771d866772d96f92e91bfe7b6afddc81588534865; expires=Tue, 02-Jun-20 19:41:05 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, access-control-allow-methods: GET, POST, PUT, DELETE, access-control-allow-origin: *, x-ratelimit-remaining: 199, cf-cache-status: DYNAMIC, expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", server: cloudflare, cf-ray: 58dc751bee151964-HKG, cf-request-id: 027da785740000196454303200000001, , 
+[03-05-2020 07:41:06] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "02aafe4640ca9098441eebab1de22a505d448cab09850c3c61ed98cc0ea94562",
+    "addresses": [
+      "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1",
+      "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"
+    ],
+    "total": 857800,
+    "fees": 22800,
+    "size": 119,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T19:41:06.048440207Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "24f887e80d3c4c8d7bf1498bafa4466296cb3e197ca698a993de1e077fa63b46",
+        "output_index": 1,
+        "output_value": 880600,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722811
+      }
+    ],
+    "outputs": [
+      {
+        "value": 3000,
+        "script": "76a91473085b71dc8d44637b29e23316146e97d336d14f88ac",
+        "addresses": [
+          "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 854800,
+        "script": "76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac",
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    "a8ef13e86532d683b9a60d644491b5dd83b425d8f84e5c707033cbf561197038"
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 07:41:06] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 07:41:06] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 07:41:06] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/send?token=0869b399275d4c5fb7958b20cf748c06
+[03-05-2020 07:41:07] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/send?token=0869b399275d4c5fb7958b20cf748c06 HTTP/2, Host: api.blockcypher.com, accept: */*, content-type: application/json, user-agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.5;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1g;curl=7.70.0), blockcypher-request-id: Kyles-MacBook-Pro.local74744158853486511455, content-length: 1318, , 
+[03-05-2020 07:41:07] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"tx":{"block_height":-1,"block_index":-1,"hash":"02aafe4640ca9098441eebab1de22a505d448cab09850c3c61ed98cc0ea94562","addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1","mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"],"total":857800,"fees":22800,"size":119,"preference":"high","relayed_by":"218.250.70.168","received":"2020-05-03T19:41:06.048440207Z","ver":1,"double_spend":false,"vin_sz":1,"vout_sz":2,"confirmations":0,"inputs":[{"prev_hash":"24f887e80d3c4c8d7bf1498bafa4466296cb3e197ca698a993de1e077fa63b46","output_index":1,"output_value":880600,"sequence":4294967295,"addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"],"script_type":"pay-to-pubkey-hash","age":1722811}],"outputs":[{"value":3000,"script":"76a91473085b71dc8d44637b29e23316146e97d336d14f88ac","addresses":["mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"],"script_type":"pay-to-pubkey-hash"},{"value":854800,"script":"76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac","addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"],"script_type":"pay-to-pubkey-hash"}]},"tosign":["a8ef13e86532d683b9a60d644491b5dd83b425d8f84e5c707033cbf561197038"],"signatures":["304402206db30016d3d26a003955b81e0efca064b65bd7413d2530a01da2fbcc0cc682170220204f927f2682e8589388dfc5d2d215b9097530e6e7de117ef9bc12146917ba2d"],"pubkeys":["022b4a7ab74aab22d2ee3a06373b5ccc4c9219ab00b45469af54ebf49d7128e7a2"]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 07:41:07] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 07:41:07] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/2 201 , date: Sun, 03 May 2020 19:41:07 GMT, content-type: application/json, content-length: 1652, set-cookie: __cfduid=d8668313ecacd5643622c7abb75e1285f1588534866; expires=Tue, 02-Jun-20 19:41:06 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, access-control-allow-methods: GET, POST, PUT, DELETE, access-control-allow-origin: *, x-ratelimit-remaining: 199, cf-cache-status: DYNAMIC, expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", server: cloudflare, cf-ray: 58dc75231ef41248-HKG, cf-request-id: 027da789ef000012481c06a200000001, , 
+[03-05-2020 07:41:07] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "8b8e54545b4c0705430c3a0e7e779a88cbf1e9333a08dbb4c597cad9bed6bfb5",
+    "addresses": [
+      "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF",
+      "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+    ],
+    "total": 857800,
+    "fees": 22800,
+    "size": 225,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T19:41:07.194434722Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "24f887e80d3c4c8d7bf1498bafa4466296cb3e197ca698a993de1e077fa63b46",
+        "output_index": 1,
+        "script": "47304402206db30016d3d26a003955b81e0efca064b65bd7413d2530a01da2fbcc0cc682170220204f927f2682e8589388dfc5d2d215b9097530e6e7de117ef9bc12146917ba2d0121022b4a7ab74aab22d2ee3a06373b5ccc4c9219ab00b45469af54ebf49d7128e7a2",
+        "output_value": 880600,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722811
+      }
+    ],
+    "outputs": [
+      {
+        "value": 3000,
+        "script": "76a91473085b71dc8d44637b29e23316146e97d336d14f88ac",
+        "addresses": [
+          "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 854800,
+        "script": "76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac",
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    ""
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 07:41:07] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 07:41:07] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:12:28] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/new?token=8583f7ffe78b4d82b7e2ee0d1eebc014
+[03-05-2020 08:12:29] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/new?token=8583f7ffe78b4d82b7e2ee0d1eebc014 HTTP/2, Host: api.blockcypher.com, accept: */*, content-type: application/json, user-agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.5;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1g;curl=7.70.0), blockcypher-request-id: Kyles-MacBook-Pro.local76403158853674833664, content-length: 143, , 
+[03-05-2020 08:12:29] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"inputs":[{"addresses":["mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"]}],"outputs":[{"addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"value":2000}]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 08:12:29] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 08:12:29] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/2 201 , date: Sun, 03 May 2020 20:12:29 GMT, content-type: application/json, content-length: 1478, set-cookie: __cfduid=dc5aee92f513ede1dbd099408dfbc96dd1588536748; expires=Tue, 02-Jun-20 20:12:28 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, access-control-allow-methods: GET, POST, PUT, DELETE, access-control-allow-origin: *, x-ratelimit-remaining: 199, cf-cache-status: DYNAMIC, expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", server: cloudflare, cf-ray: 58dca31629983383-HKG, cf-request-id: 027dc441dd00003383491ac200000001, , 
+[03-05-2020 08:12:29] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "f1dfb51d2d8c32ddd49ac7812f271bc42cc19b3d5f806b4b3334673685f4a430",
+    "addresses": [
+      "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF",
+      "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+    ],
+    "total": 53400,
+    "fees": 22800,
+    "size": 119,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T20:12:29.35191667Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "122966375002a57457a258498cd15c506c322b67038bf177a96259efe10d9184",
+        "output_index": 1,
+        "output_value": 76200,
+        "sequence": 4294967295,
+        "addresses": [
+          "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722766
+      }
+    ],
+    "outputs": [
+      {
+        "value": 2000,
+        "script": "76a914e403e903fabb7594d55973126e591f0569208e9c88ac",
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 51400,
+        "script": "76a91473085b71dc8d44637b29e23316146e97d336d14f88ac",
+        "addresses": [
+          "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    "0c4b1894b4508970e6f2283fb6aa6f353cfcde93832f3f9dbae93a8e3d452bf9"
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 08:12:29] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:12:29] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:12:29] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/send?token=8583f7ffe78b4d82b7e2ee0d1eebc014
+[03-05-2020 08:12:30] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/send?token=8583f7ffe78b4d82b7e2ee0d1eebc014 HTTP/2, Host: api.blockcypher.com, accept: */*, content-type: application/json, user-agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.5;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1g;curl=7.70.0), blockcypher-request-id: Kyles-MacBook-Pro.local76403158853674833664, content-length: 1316, , 
+[03-05-2020 08:12:30] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"tx":{"block_height":-1,"block_index":-1,"hash":"f1dfb51d2d8c32ddd49ac7812f271bc42cc19b3d5f806b4b3334673685f4a430","addresses":["mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF","n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"total":53400,"fees":22800,"size":119,"preference":"high","relayed_by":"218.250.70.168","received":"2020-05-03T20:12:29.35191667Z","ver":1,"double_spend":false,"vin_sz":1,"vout_sz":2,"confirmations":0,"inputs":[{"prev_hash":"122966375002a57457a258498cd15c506c322b67038bf177a96259efe10d9184","output_index":1,"output_value":76200,"sequence":4294967295,"addresses":["mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"],"script_type":"pay-to-pubkey-hash","age":1722766}],"outputs":[{"value":2000,"script":"76a914e403e903fabb7594d55973126e591f0569208e9c88ac","addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"script_type":"pay-to-pubkey-hash"},{"value":51400,"script":"76a91473085b71dc8d44637b29e23316146e97d336d14f88ac","addresses":["mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"],"script_type":"pay-to-pubkey-hash"}]},"tosign":["0c4b1894b4508970e6f2283fb6aa6f353cfcde93832f3f9dbae93a8e3d452bf9"],"signatures":["3045022100b7bcaeb83c609866a417711454ae41f050f542a9576eca94f3f9fc1369c9c9ca02203a09da8a3324735bcbb0d0cc6a61d5976476adf30986176b000aac5397de3ed0"],"pubkeys":["02ae2ca0b43be0db13a6acdceeb2491dfe7eade56b084b640868af4e4c12d6d383"]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 08:12:30] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 08:12:30] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/2 201 , date: Sun, 03 May 2020 20:12:30 GMT, content-type: application/json, content-length: 1651, set-cookie: __cfduid=d62f67705fabdf6a4a95f6207006848131588536749; expires=Tue, 02-Jun-20 20:12:29 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, access-control-allow-methods: GET, POST, PUT, DELETE, access-control-allow-origin: *, x-ratelimit-remaining: 199, cf-cache-status: DYNAMIC, expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", server: cloudflare, cf-ray: 58dca31dfc5b3285-HKG, cf-request-id: 027dc446bd00003285862ce200000001, , 
+[03-05-2020 08:12:30] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "e302e0db481786d68114500ae5ae6d33985e157df249b6c18e2cbd193c322601",
+    "addresses": [
+      "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF",
+      "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+    ],
+    "total": 53400,
+    "fees": 22800,
+    "size": 226,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T20:12:30.562580351Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "122966375002a57457a258498cd15c506c322b67038bf177a96259efe10d9184",
+        "output_index": 1,
+        "script": "483045022100b7bcaeb83c609866a417711454ae41f050f542a9576eca94f3f9fc1369c9c9ca02203a09da8a3324735bcbb0d0cc6a61d5976476adf30986176b000aac5397de3ed0012102ae2ca0b43be0db13a6acdceeb2491dfe7eade56b084b640868af4e4c12d6d383",
+        "output_value": 76200,
+        "sequence": 4294967295,
+        "addresses": [
+          "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722766
+      }
+    ],
+    "outputs": [
+      {
+        "value": 2000,
+        "script": "76a914e403e903fabb7594d55973126e591f0569208e9c88ac",
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 51400,
+        "script": "76a91473085b71dc8d44637b29e23316146e97d336d14f88ac",
+        "addresses": [
+          "mr1C1nPYpTEScVnv4Pr6HH6SX3B2pk1TuF"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    ""
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 08:12:30] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:12:30] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:12:52] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/new?token=8b2a1ed72d984917a83f6b5ae136cf7d
+[03-05-2020 08:12:53] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/new?token=8b2a1ed72d984917a83f6b5ae136cf7d HTTP/2, Host: api.blockcypher.com, accept: */*, content-type: application/json, user-agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.5;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1g;curl=7.70.0), blockcypher-request-id: Kyles-MacBook-Pro.local7642415885367725714, content-length: 143, , 
+[03-05-2020 08:12:53] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"inputs":[{"addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"]}],"outputs":[{"addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"],"value":1000}]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 08:12:53] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 08:12:53] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/2 201 , date: Sun, 03 May 2020 20:12:53 GMT, content-type: application/json, content-length: 1899, set-cookie: __cfduid=db29d5b20a13b89dc60db8bd6a87115361588536772; expires=Tue, 02-Jun-20 20:12:52 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, access-control-allow-methods: GET, POST, PUT, DELETE, access-control-allow-origin: *, x-ratelimit-remaining: 199, cf-cache-status: DYNAMIC, expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", server: cloudflare, cf-ray: 58dca3ac2b2c122e-HKG, cf-request-id: 027dc49f960000122eadb9e200000001, , 
+[03-05-2020 08:12:53] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "0069f2551cf447986d1c9f48521befdc120fc8a383bbbc23798d561660a9fc8c",
+    "addresses": [
+      "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v",
+      "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+    ],
+    "total": 963200,
+    "fees": 37800,
+    "size": 160,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T20:12:53.332239727Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 2,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "122966375002a57457a258498cd15c506c322b67038bf177a96259efe10d9184",
+        "output_index": 0,
+        "output_value": 1000,
+        "sequence": 4294967295,
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722766
+      },
+      {
+        "prev_hash": "dadb8142e9d062e961ad37a6c28fde83696bcb9b4f115afd28cacbf2c57828d2",
+        "output_index": 0,
+        "output_value": 1000000,
+        "sequence": 4294967295,
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722764
+      }
+    ],
+    "outputs": [
+      {
+        "value": 1000,
+        "script": "76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac",
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 962200,
+        "script": "76a914e403e903fabb7594d55973126e591f0569208e9c88ac",
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    "67b3d6c73617d684b5706bd3611a7ec6c60d1030741fd954af88ee1394303067",
+    "c15778c92184a2d2fd16674722472fb2bca2eaccef8bb2d3c239a863ab1036d2"
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 08:12:53] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:12:53] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:12:53] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/send?token=8b2a1ed72d984917a83f6b5ae136cf7d
+[03-05-2020 08:12:54] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/send?token=8b2a1ed72d984917a83f6b5ae136cf7d HTTP/2, Host: api.blockcypher.com, accept: */*, content-type: application/json, user-agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.5;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1g;curl=7.70.0), blockcypher-request-id: Kyles-MacBook-Pro.local7642415885367725714, content-length: 1840, , 
+[03-05-2020 08:12:54] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"tx":{"block_height":-1,"block_index":-1,"hash":"0069f2551cf447986d1c9f48521befdc120fc8a383bbbc23798d561660a9fc8c","addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v","mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"],"total":963200,"fees":37800,"size":160,"preference":"high","relayed_by":"218.250.70.168","received":"2020-05-03T20:12:53.332239727Z","ver":1,"double_spend":false,"vin_sz":2,"vout_sz":2,"confirmations":0,"inputs":[{"prev_hash":"122966375002a57457a258498cd15c506c322b67038bf177a96259efe10d9184","output_index":0,"output_value":1000,"sequence":4294967295,"addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"script_type":"pay-to-pubkey-hash","age":1722766},{"prev_hash":"dadb8142e9d062e961ad37a6c28fde83696bcb9b4f115afd28cacbf2c57828d2","output_index":0,"output_value":1000000,"sequence":4294967295,"addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"script_type":"pay-to-pubkey-hash","age":1722764}],"outputs":[{"value":1000,"script":"76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac","addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"],"script_type":"pay-to-pubkey-hash"},{"value":962200,"script":"76a914e403e903fabb7594d55973126e591f0569208e9c88ac","addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"script_type":"pay-to-pubkey-hash"}]},"tosign":["67b3d6c73617d684b5706bd3611a7ec6c60d1030741fd954af88ee1394303067","c15778c92184a2d2fd16674722472fb2bca2eaccef8bb2d3c239a863ab1036d2"],"signatures":["3045022100a038b6861682dcddf37cf64394f590729eb16ad58994886b22bdda243ecbe9f202205598ca7ebb4112a8e2875c9e852a29871c929ff723eaf602525fa69034e83e8a","304402207d880df752abb7de4a7bb85f42cafa2d90bb9afe3e70d2046f50dc977864f810022053f352ccfba8a939f11910b39d0a0ee70c3825a0e96eaffac652e6eae1816877"],"pubkeys":["020147ff514cd63ef890c83f7cf2388b94b1b84ff03f5922bae47a604cbff0b7f3","020147ff514cd63ef890c83f7cf2388b94b1b84ff03f5922bae47a604cbff0b7f3"]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 08:12:54] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 08:12:54] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/2 201 , date: Sun, 03 May 2020 20:12:54 GMT, content-type: application/json, set-cookie: __cfduid=d304fab370eeea07c11e590f73ff4a4db1588536773; expires=Tue, 02-Jun-20 20:12:53 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, access-control-allow-methods: GET, POST, PUT, DELETE, access-control-allow-origin: *, x-ratelimit-remaining: 199, cf-cache-status: DYNAMIC, expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", server: cloudflare, cf-ray: 58dca3b39d38194f-HKG, cf-request-id: 027dc4a4410000194f74a10200000001, , 
+[03-05-2020 08:12:54] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "e107eaa484cbb2346f4e068e60354293582eefecdb2620a49a485ae7c4ba2330",
+    "addresses": [
+      "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1",
+      "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+    ],
+    "total": 963200,
+    "fees": 37800,
+    "size": 373,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T20:12:54.469392998Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 2,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "122966375002a57457a258498cd15c506c322b67038bf177a96259efe10d9184",
+        "output_index": 0,
+        "script": "483045022100a038b6861682dcddf37cf64394f590729eb16ad58994886b22bdda243ecbe9f202205598ca7ebb4112a8e2875c9e852a29871c929ff723eaf602525fa69034e83e8a0121020147ff514cd63ef890c83f7cf2388b94b1b84ff03f5922bae47a604cbff0b7f3",
+        "output_value": 1000,
+        "sequence": 4294967295,
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722766
+      },
+      {
+        "prev_hash": "dadb8142e9d062e961ad37a6c28fde83696bcb9b4f115afd28cacbf2c57828d2",
+        "output_index": 0,
+        "script": "47304402207d880df752abb7de4a7bb85f42cafa2d90bb9afe3e70d2046f50dc977864f810022053f352ccfba8a939f11910b39d0a0ee70c3825a0e96eaffac652e6eae18168770121020147ff514cd63ef890c83f7cf2388b94b1b84ff03f5922bae47a604cbff0b7f3",
+        "output_value": 1000000,
+        "sequence": 4294967295,
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722764
+      }
+    ],
+    "outputs": [
+      {
+        "value": 1000,
+        "script": "76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac",
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 962200,
+        "script": "76a914e403e903fabb7594d55973126e591f0569208e9c88ac",
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    "",
+    ""
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 08:12:54] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:12:54] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:13:35] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/new?token=0869b399275d4c5fb7958b20cf748c06
+[03-05-2020 08:13:36] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/new?token=0869b399275d4c5fb7958b20cf748c06 HTTP/2, Host: api.blockcypher.com, accept: */*, content-type: application/json, user-agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.5;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1g;curl=7.70.0), blockcypher-request-id: Kyles-MacBook-Pro.local76455158853681549889, content-length: 143, , 
+[03-05-2020 08:13:36] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"inputs":[{"addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"]}],"outputs":[{"addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"value":3000}]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 08:13:36] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 08:13:36] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/2 201 , date: Sun, 03 May 2020 20:13:36 GMT, content-type: application/json, content-length: 1482, set-cookie: __cfduid=d79f1594370ec76cbc7271e09850c5e361588536815; expires=Tue, 02-Jun-20 20:13:35 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, access-control-allow-methods: GET, POST, PUT, DELETE, access-control-allow-origin: *, x-ratelimit-remaining: 199, cf-cache-status: DYNAMIC, expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", server: cloudflare, cf-ray: 58dca4b74c1ad1a3-HKG, cf-request-id: 027dc5468b0000d1a3c834b200000001, , 
+[03-05-2020 08:13:36] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "d4018293dcba194bde51bad3bb4eed191338015b559ebd179ffe0155a60aecd7",
+    "addresses": [
+      "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1",
+      "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+    ],
+    "total": 832000,
+    "fees": 22800,
+    "size": 119,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T20:13:36.028145813Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "8b8e54545b4c0705430c3a0e7e779a88cbf1e9333a08dbb4c597cad9bed6bfb5",
+        "output_index": 1,
+        "output_value": 854800,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722815
+      }
+    ],
+    "outputs": [
+      {
+        "value": 3000,
+        "script": "76a914e403e903fabb7594d55973126e591f0569208e9c88ac",
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 829000,
+        "script": "76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac",
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    "ef1ae1892764adb024723a18d65ca0691fb4c905ea976d6e4bbecdcc53256c5d"
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 08:13:36] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:13:36] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:13:36] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/send?token=0869b399275d4c5fb7958b20cf748c06
+[03-05-2020 08:13:37] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/send?token=0869b399275d4c5fb7958b20cf748c06 HTTP/2, Host: api.blockcypher.com, accept: */*, content-type: application/json, user-agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.5;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1g;curl=7.70.0), blockcypher-request-id: Kyles-MacBook-Pro.local76455158853681549889, content-length: 1318, , 
+[03-05-2020 08:13:37] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"tx":{"block_height":-1,"block_index":-1,"hash":"d4018293dcba194bde51bad3bb4eed191338015b559ebd179ffe0155a60aecd7","addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1","n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"total":832000,"fees":22800,"size":119,"preference":"high","relayed_by":"218.250.70.168","received":"2020-05-03T20:13:36.028145813Z","ver":1,"double_spend":false,"vin_sz":1,"vout_sz":2,"confirmations":0,"inputs":[{"prev_hash":"8b8e54545b4c0705430c3a0e7e779a88cbf1e9333a08dbb4c597cad9bed6bfb5","output_index":1,"output_value":854800,"sequence":4294967295,"addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"],"script_type":"pay-to-pubkey-hash","age":1722815}],"outputs":[{"value":3000,"script":"76a914e403e903fabb7594d55973126e591f0569208e9c88ac","addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"script_type":"pay-to-pubkey-hash"},{"value":829000,"script":"76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac","addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"],"script_type":"pay-to-pubkey-hash"}]},"tosign":["ef1ae1892764adb024723a18d65ca0691fb4c905ea976d6e4bbecdcc53256c5d"],"signatures":["304402206fe721a71a0d561a285c2cf9b0db1e02a3cc63c46e8b0b91bbca698136920b50022006d1d2a928573278755e5ca4b434b31ecd7b2e8f8bd289e2e9b9d1ff0f1631a6"],"pubkeys":["022b4a7ab74aab22d2ee3a06373b5ccc4c9219ab00b45469af54ebf49d7128e7a2"]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 08:13:37] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 08:13:37] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/2 201 , date: Sun, 03 May 2020 20:13:37 GMT, content-type: application/json, content-length: 1651, set-cookie: __cfduid=db16af44a77e0c36d798ec1c36dcfe1901588536816; expires=Tue, 02-Jun-20 20:13:36 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, access-control-allow-methods: GET, POST, PUT, DELETE, access-control-allow-origin: *, x-ratelimit-remaining: 198, cf-cache-status: DYNAMIC, expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", server: cloudflare, cf-ray: 58dca4bf3bf91258-HKG, cf-request-id: 027dc54b8600001258b535f200000001, , 
+[03-05-2020 08:13:37] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "b41626d9fa08c286ceb0c2d4d5f9954852813789b1d651dc4fc07d578576c614",
+    "addresses": [
+      "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v",
+      "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+    ],
+    "total": 832000,
+    "fees": 22800,
+    "size": 225,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T20:13:37.31932265Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "8b8e54545b4c0705430c3a0e7e779a88cbf1e9333a08dbb4c597cad9bed6bfb5",
+        "output_index": 1,
+        "script": "47304402206fe721a71a0d561a285c2cf9b0db1e02a3cc63c46e8b0b91bbca698136920b50022006d1d2a928573278755e5ca4b434b31ecd7b2e8f8bd289e2e9b9d1ff0f1631a60121022b4a7ab74aab22d2ee3a06373b5ccc4c9219ab00b45469af54ebf49d7128e7a2",
+        "output_value": 854800,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722815
+      }
+    ],
+    "outputs": [
+      {
+        "value": 3000,
+        "script": "76a914e403e903fabb7594d55973126e591f0569208e9c88ac",
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 829000,
+        "script": "76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac",
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    ""
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 08:13:37] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:13:37] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:14:38] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/new?token=0869b399275d4c5fb7958b20cf748c06
+[03-05-2020 08:14:39] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/new?token=0869b399275d4c5fb7958b20cf748c06 HTTP/2, Host: api.blockcypher.com, accept: */*, content-type: application/json, user-agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.5;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1g;curl=7.70.0), blockcypher-request-id: Kyles-MacBook-Pro.local76508158853687833486, content-length: 143, , 
+[03-05-2020 08:14:39] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"inputs":[{"addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"]}],"outputs":[{"addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"value":3000}]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 08:14:39] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 08:14:39] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/2 201 , date: Sun, 03 May 2020 20:14:39 GMT, content-type: application/json, content-length: 1891, set-cookie: __cfduid=df357cf13a7a9bf84b66df81ecf2312441588536878; expires=Tue, 02-Jun-20 20:14:38 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, access-control-allow-methods: GET, POST, PUT, DELETE, access-control-allow-origin: *, x-ratelimit-remaining: 199, cf-cache-status: DYNAMIC, expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", server: cloudflare, cf-ray: 58dca6451ef5d95a-HKG, cf-request-id: 027dc63f2b0000d95aa22df200000001, , 
+[03-05-2020 08:14:39] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "f6cbf40f5fe35905930fedf9e463d2e21787aa1b7f5ffe44968fe2ede725dd18",
+    "addresses": [
+      "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1",
+      "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+    ],
+    "total": 792400,
+    "fees": 37600,
+    "size": 160,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T20:14:39.74166376Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 2,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "e107eaa484cbb2346f4e068e60354293582eefecdb2620a49a485ae7c4ba2330",
+        "output_index": 0,
+        "output_value": 1000,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722816
+      },
+      {
+        "prev_hash": "b41626d9fa08c286ceb0c2d4d5f9954852813789b1d651dc4fc07d578576c614",
+        "output_index": 1,
+        "output_value": 829000,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 0
+      }
+    ],
+    "outputs": [
+      {
+        "value": 3000,
+        "script": "76a914e403e903fabb7594d55973126e591f0569208e9c88ac",
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 789400,
+        "script": "76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac",
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    "20c3e88223d3be00540e6fbafc822f0c09afc6fad5e519312575fcf5f20aa41c",
+    "72fcf66c55b8e6e85693d6ed0d0c94eda1447298b07011a3f58a0158958b5fe0"
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 08:14:39] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:14:39] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:14:40] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/send?token=0869b399275d4c5fb7958b20cf748c06
+[03-05-2020 08:14:41] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/send?token=0869b399275d4c5fb7958b20cf748c06 HTTP/2, Host: api.blockcypher.com, accept: */*, content-type: application/json, user-agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.5;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1g;curl=7.70.0), blockcypher-request-id: Kyles-MacBook-Pro.local76508158853687833486, content-length: 1830, , 
+[03-05-2020 08:14:41] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"tx":{"block_height":-1,"block_index":-1,"hash":"f6cbf40f5fe35905930fedf9e463d2e21787aa1b7f5ffe44968fe2ede725dd18","addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1","n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"total":792400,"fees":37600,"size":160,"preference":"high","relayed_by":"218.250.70.168","received":"2020-05-03T20:14:39.74166376Z","ver":1,"double_spend":false,"vin_sz":2,"vout_sz":2,"confirmations":0,"inputs":[{"prev_hash":"e107eaa484cbb2346f4e068e60354293582eefecdb2620a49a485ae7c4ba2330","output_index":0,"output_value":1000,"sequence":4294967295,"addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"],"script_type":"pay-to-pubkey-hash","age":1722816},{"prev_hash":"b41626d9fa08c286ceb0c2d4d5f9954852813789b1d651dc4fc07d578576c614","output_index":1,"output_value":829000,"sequence":4294967295,"addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"],"script_type":"pay-to-pubkey-hash","age":0}],"outputs":[{"value":3000,"script":"76a914e403e903fabb7594d55973126e591f0569208e9c88ac","addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"script_type":"pay-to-pubkey-hash"},{"value":789400,"script":"76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac","addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"],"script_type":"pay-to-pubkey-hash"}]},"tosign":["20c3e88223d3be00540e6fbafc822f0c09afc6fad5e519312575fcf5f20aa41c","72fcf66c55b8e6e85693d6ed0d0c94eda1447298b07011a3f58a0158958b5fe0"],"signatures":["304402203a7a0769e97e46f248bc1dc62d0c0578a23661fa668dde3082ddedbc99110db7022061cfc9411a486ea2d7f2663c0358529b2b929fd548ce393a67cb54a1c63d6ce6","304402200ecca9c1cc04547e69cc1136607a44c745e847257a48218763dbacf3407f8e4b022060575a3b80bdbd5ea558b8cda073bc5b61bac8b6a1f8f2aa5cd16cc3841d9291"],"pubkeys":["022b4a7ab74aab22d2ee3a06373b5ccc4c9219ab00b45469af54ebf49d7128e7a2","022b4a7ab74aab22d2ee3a06373b5ccc4c9219ab00b45469af54ebf49d7128e7a2"]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 08:14:41] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 08:14:41] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/2 201 , date: Sun, 03 May 2020 20:14:41 GMT, content-type: application/json, set-cookie: __cfduid=d623d721bed9b56b2dc45e2d6e4fff0ca1588536880; expires=Tue, 02-Jun-20 20:14:40 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, access-control-allow-methods: GET, POST, PUT, DELETE, access-control-allow-origin: *, x-ratelimit-remaining: 198, cf-cache-status: DYNAMIC, expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", server: cloudflare, cf-ray: 58dca64caa2e196f-HKG, cf-request-id: 027dc643e40000196fe2a2a200000001, , 
+[03-05-2020 08:14:41] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "737d8afea2740df88e5a6a505521fe6af5ff34974ff772ebfbbad9b24093c09f",
+    "addresses": [
+      "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1",
+      "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+    ],
+    "total": 792400,
+    "fees": 37600,
+    "size": 372,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T20:14:40.88401977Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 2,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "e107eaa484cbb2346f4e068e60354293582eefecdb2620a49a485ae7c4ba2330",
+        "output_index": 0,
+        "script": "47304402203a7a0769e97e46f248bc1dc62d0c0578a23661fa668dde3082ddedbc99110db7022061cfc9411a486ea2d7f2663c0358529b2b929fd548ce393a67cb54a1c63d6ce60121022b4a7ab74aab22d2ee3a06373b5ccc4c9219ab00b45469af54ebf49d7128e7a2",
+        "output_value": 1000,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1722816
+      },
+      {
+        "prev_hash": "b41626d9fa08c286ceb0c2d4d5f9954852813789b1d651dc4fc07d578576c614",
+        "output_index": 1,
+        "script": "47304402200ecca9c1cc04547e69cc1136607a44c745e847257a48218763dbacf3407f8e4b022060575a3b80bdbd5ea558b8cda073bc5b61bac8b6a1f8f2aa5cd16cc3841d92910121022b4a7ab74aab22d2ee3a06373b5ccc4c9219ab00b45469af54ebf49d7128e7a2",
+        "output_value": 829000,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 0
+      }
+    ],
+    "outputs": [
+      {
+        "value": 3000,
+        "script": "76a914e403e903fabb7594d55973126e591f0569208e9c88ac",
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 789400,
+        "script": "76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac",
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    "",
+    ""
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 08:14:41] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:14:41] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:30:19] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/new?token=0869b399275d4c5fb7958b20cf748c06
+[03-05-2020 08:30:20] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/new?token=0869b399275d4c5fb7958b20cf748c06 HTTP/2, Host: api.blockcypher.com, accept: */*, content-type: application/json, user-agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.5;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1g;curl=7.70.0), blockcypher-request-id: Kyles-MacBook-Pro.local77393158853781928875, content-length: 143, , 
+[03-05-2020 08:30:20] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"inputs":[{"addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"]}],"outputs":[{"addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"value":5000}]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 08:30:20] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 08:30:20] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/2 201 , date: Sun, 03 May 2020 20:30:20 GMT, content-type: application/json, content-length: 1476, set-cookie: __cfduid=db4b9d445488d580a12272f25bcf455971588537819; expires=Tue, 02-Jun-20 20:30:19 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, access-control-allow-methods: GET, POST, PUT, DELETE, access-control-allow-origin: *, x-ratelimit-remaining: 199, cf-cache-status: DYNAMIC, expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", server: cloudflare, cf-ray: 58dcbd3d1f7e1234-HKG, cf-request-id: 027dd49a2e00001234fe913200000001, , 
+[03-05-2020 08:30:20] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "436fd51630c1c312e97ea66779f01ba20a9febd5265289c644934d468f4361f2",
+    "addresses": [
+      "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1",
+      "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+    ],
+    "total": 766600,
+    "fees": 22800,
+    "size": 119,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T20:30:20.576967957Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "737d8afea2740df88e5a6a505521fe6af5ff34974ff772ebfbbad9b24093c09f",
+        "output_index": 1,
+        "output_value": 789400,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 0
+      }
+    ],
+    "outputs": [
+      {
+        "value": 5000,
+        "script": "76a914e403e903fabb7594d55973126e591f0569208e9c88ac",
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 761600,
+        "script": "76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac",
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    "8b02a3a91514e19348e3fb65dbbb602f21712699c1401c8da9f60f4dbe4f52e4"
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 08:30:20] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:30:20] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:30:20] BlockCypher\Core\BlockCypherHttpConnection: INFO	: POST https://api.blockcypher.com/v1/btc/test3/txs/send?token=0869b399275d4c5fb7958b20cf748c06
+[03-05-2020 08:30:21] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: POST /v1/btc/test3/txs/send?token=0869b399275d4c5fb7958b20cf748c06 HTTP/2, Host: api.blockcypher.com, accept: */*, content-type: application/json, user-agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.4.5;bit=64;os=Darwin_19.3.0;machine=x86_64;openssl=1.1.1g;curl=7.70.0), blockcypher-request-id: Kyles-MacBook-Pro.local77393158853781928875, content-length: 1314, , 
+[03-05-2020 08:30:21] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Data		: {"tx":{"block_height":-1,"block_index":-1,"hash":"436fd51630c1c312e97ea66779f01ba20a9febd5265289c644934d468f4361f2","addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1","n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"total":766600,"fees":22800,"size":119,"preference":"high","relayed_by":"218.250.70.168","received":"2020-05-03T20:30:20.576967957Z","ver":1,"double_spend":false,"vin_sz":1,"vout_sz":2,"confirmations":0,"inputs":[{"prev_hash":"737d8afea2740df88e5a6a505521fe6af5ff34974ff772ebfbbad9b24093c09f","output_index":1,"output_value":789400,"sequence":4294967295,"addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"],"script_type":"pay-to-pubkey-hash","age":0}],"outputs":[{"value":5000,"script":"76a914e403e903fabb7594d55973126e591f0569208e9c88ac","addresses":["n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"],"script_type":"pay-to-pubkey-hash"},{"value":761600,"script":"76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac","addresses":["mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"],"script_type":"pay-to-pubkey-hash"}]},"tosign":["8b02a3a91514e19348e3fb65dbbb602f21712699c1401c8da9f60f4dbe4f52e4"],"signatures":["3045022100821e0b5e627c1e00408295329fbdf5a66a92a776384924bbc8b0706409cf5219022048f13edf5a0d0107b7d92a4bbfe844c5b77794d48dbbf2bf2847fed40afb7fc5"],"pubkeys":["022b4a7ab74aab22d2ee3a06373b5ccc4c9219ab00b45469af54ebf49d7128e7a2"]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-05-2020 08:30:21] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 201
+[03-05-2020 08:30:21] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/2 201 , date: Sun, 03 May 2020 20:30:21 GMT, content-type: application/json, content-length: 1648, set-cookie: __cfduid=dfbf3dcdf7ec9cea2f8c208412be18d301588537820; expires=Tue, 02-Jun-20 20:30:20 GMT; path=/; domain=.blockcypher.com; HttpOnly; SameSite=Lax, access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, access-control-allow-methods: GET, POST, PUT, DELETE, access-control-allow-origin: *, x-ratelimit-remaining: 197, cf-cache-status: DYNAMIC, expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct", server: cloudflare, cf-ray: 58dcbd44c9b00bc0-HKG, cf-request-id: 027dd49ef800000bc010918200000001, , 
+[03-05-2020 08:30:21] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Data 	: {
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "b5400f35b145060e8a701f6b73636fde99709ac094a19900d088fbca96f9d1c6",
+    "addresses": [
+      "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v",
+      "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+    ],
+    "total": 766600,
+    "fees": 22800,
+    "size": 226,
+    "preference": "high",
+    "relayed_by": "218.250.70.168",
+    "received": "2020-05-03T20:30:21.707089382Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "737d8afea2740df88e5a6a505521fe6af5ff34974ff772ebfbbad9b24093c09f",
+        "output_index": 1,
+        "script": "483045022100821e0b5e627c1e00408295329fbdf5a66a92a776384924bbc8b0706409cf5219022048f13edf5a0d0107b7d92a4bbfe844c5b77794d48dbbf2bf2847fed40afb7fc50121022b4a7ab74aab22d2ee3a06373b5ccc4c9219ab00b45469af54ebf49d7128e7a2",
+        "output_value": 789400,
+        "sequence": 4294967295,
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 0
+      }
+    ],
+    "outputs": [
+      {
+        "value": 5000,
+        "script": "76a914e403e903fabb7594d55973126e591f0569208e9c88ac",
+        "addresses": [
+          "n2Jb3UgEC5Doe5QQ79FD2xfRtUBuVVBu5v"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      },
+      {
+        "value": 761600,
+        "script": "76a9146d853a7821db5781e878bc83ae369d774f65ce5388ac",
+        "addresses": [
+          "mqW3YqNLRtQ9cLHwzkhMogW96kpMTNmua1"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  },
+  "tosign": [
+    ""
+  ]
+}
+
+================================================================================================================================
+
+[03-05-2020 08:30:21] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues
+[03-05-2020 08:30:21] BlockCypher\Validation\ModelAccessorValidator: DEBUG	: Missing Accessor: BlockCypher\Api\TX:setBlockIndex. You might be using older version of SDK. If not, create an issue at https://github.com/blockcypher/php-client/issues

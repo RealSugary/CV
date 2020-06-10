@@ -1,0 +1,16 @@
+<resources>
+    // Home Screen
+    <string name="app_name">WiFi Scanner</string>
+    <string name="icon">Wifi Scanner Icon</string>
+    <string name="start">Start</string>
+    // WiFi items
+    <string name="ssid">SSID</string>
+    <string name="bssid">BSSID</string>
+    <string name="location">GPS Location</string>
+    // WiFi Scanner Main
+    <string name="header">Press Scan button to get the list</string>
+    <string name="tvrefreshed">Refresh Times: 0</string>
+    <string name="scantime_edit">Refresh Time</string>
+    // Save List
+    <string name="listSaveHeader">Saved WiFi List</string>
+</resources>

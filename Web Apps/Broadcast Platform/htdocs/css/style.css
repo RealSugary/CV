@@ -1,0 +1,410 @@
+/*          General          */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+a, body, div, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, img, label, i, nav, ol, p, pre, section, span, table, tbody, td, th, thead, time, tr, ul, video {
+   border: 0;
+   margin: 0;
+   padding: 0;
+   font: inherit;
+   font-size: 100%;
+   vertical-align: baseline;
+}
+
+body {
+   color: #FFFFFF;
+   font-size: 1.2rem;
+   font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+html {
+   font-size: 100%;
+}
+
+h1, h2, strong {
+   font-weight: 700;
+}
+
+h3, h4 {
+   font-weight: 600;
+}
+
+h1, h2, h3 {
+   line-height: 1.2;
+}
+
+body, h4, h5, h6, html, p {
+   line-height: 1.5;
+}
+
+h1 {
+   font-size: 5.4rem;
+}
+
+h2 {
+   font-size: 3.6rem;
+}
+
+h3 {
+   font-size: 2.4rem;
+}
+
+h4 {
+   font-size: 1.8rem;
+}
+
+h5 {
+   font-size: 1.4rem;
+}
+
+h6, p {
+   font-size: 1.2rem;
+}
+
+small {
+   font-size: 0.8rem;
+}
+
+table {
+   border-spacing: 0;
+   border-collapse: collapse;
+}
+
+.btn {
+   color: #FFFFFF;
+   padding: 5px 10px;
+   border-radius: 5px;
+   border: 1px solid #E68939;
+   background-color: #E68939;
+}
+
+.btn-radio {
+   color: #FFFFFF;
+   background-color: #6C757D;
+   border-color: #6C757D;
+}
+
+.btn-radio:focus, .btn-radio:hover, .btn-radio:not(:disabled):not(.disabled):active, .btn-radio:not(:disabled):not(.disabled).active,
+.show > .btn-radio.dropdown-toggle,
+.btn:focus, .btn:hover, .btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active,
+.show > .btn.dropdown-toggle  {
+  background-color: #E68939;
+  border-color: #545b62;
+}
+
+.btn-close {
+   color: #FFFFFF;
+}
+
+
+.card {
+   background-color: #121721;
+}
+
+.card-body {
+   background-color: #161D29;
+}
+
+/*          Page Container          */
+.main .forpadding.container:first-child, .main .broadcast-content, .main .chatroom-sidebar {
+   height: 100%;
+   padding-top: 75px;
+}
+
+body.broadcastroom {
+   overflow: hidden;
+}
+
+.broadcastroom .main.row {
+   height: 100%;
+}
+
+/*       TOP - Navigation Bar       */
+.top-navbar .navbar {
+   padding: 5px 15px;
+   padding-bottom: 0;
+   box-shadow: 0 1px 2px rgba( 0, 0, 0, 0.5 ), 0 0px 5px rgba( 0, 0, 0, 0.8 );
+}
+
+.top-navbar .navbar-nav .nav-item {
+   margin-right: 10px;
+   padding-bottom: 10px;
+}
+
+.top-navbar .navbar-nav .nav-link, .top-navbar .ml-md-auto .nav-link {
+   width: fit-content;
+   color: #FFFFFF;
+}
+
+.top-navbar .navbar-nav .nav-link.active, .top-navbar .navbar-nav a:hover {
+   color: #E68939;
+   border-bottom: 2px solid #E68939;
+   background-color: transparent;
+}
+
+.top-navbar .ml-md-auto {
+   position: relative;
+}
+
+.top-navbar .ml-md-auto .user-icon img {
+   width: 30px;
+   height: 30px;
+   margin: 0 20px 0 10px;
+   border-radius: 100%;
+}
+
+.top-navbar .ml-md-auto .dropdown-menu {
+   top: 40px;
+   left: -110px;
+   position: absolute;
+   border: 2px solid rgba( 255, 255, 255, 0.3 );
+   background-color: #121721;
+}
+
+.top-navbar .ml-md-auto .dropdown-item {
+   color: #FFFFFF;
+}
+
+.top-navbar .ml-md-auto .dropdown-item:hover, .top-navbar .ml-md-auto .dropdown-item.active {
+   background: #E68939;
+}
+
+.top-navbar .ml-md-auto .dropdown-divider {
+   border-color: rgba( 255, 255, 255, 0.2 );
+}
+
+.top-navbar .navbar-collapse .btn-login {
+   margin-right: 10px;
+}
+
+
+
+/*       Member Modal        */
+.lobby .modal-content {
+   width: 400px;
+}
+
+.modal-content, .modal-body {
+   background-color: #161D29;
+}
+
+.modal-header, .modal-footer {
+   background-color: #121721;
+}
+
+.modal-header, .modal-body, .modal-footer {
+   border: 0;
+}
+
+.modal-header {
+   padding-bottom: 0;
+}
+
+.modal-header .container-fiuld {
+   width: 100%;
+}
+
+.modal-header .col-md-6:first-child {
+   padding-right: 0;
+}
+
+.modal-header .col-md-6:last-child {
+   padding-left: 0;
+}
+
+.modal-header .btn-formselector {
+   border: 0;
+   width: 100%;
+   color: #FFFFFF;
+   background-color: #121721;
+}
+
+.modal-header .btn-formselector.active, .modal-header .btn-formselector:hover {
+   color: #E68939;
+   padding-bottom: 2px;
+   border-bottom: 1.5px solid #E68939;
+}
+
+.modal-body {
+   padding-top: 0;
+   padding-bottom: 0;
+}
+
+.modal-body form {
+   padding-top: 16px;
+   padding-bottom: 16px;
+   border-top: 1px solid rgba( 255, 255, 255, 0.1 );
+   border-bottom: 1px solid rgba( 255, 255, 255, 0.1 );
+}
+
+/*             Form             */
+
+
+/*          Login Form          */
+.modal-body .recovery small {
+   color: #E68939;
+   text-decoration: underline;
+}
+
+.modal-footer .btn-submitform {
+   width: 100%;
+   margin-top: 6px;
+   margin-bottom: 6px;
+}
+
+/*       Registraion Form       */
+.modal-body .signup-selector .btn-group-toggle {
+   width: 100%;
+}
+
+.modal-body .signup-selector .btn-group-toggle .btn-radio {
+   width: 50%;
+}
+
+.modal-body .hashtags .hashtags-row {
+   margin-bottom: 5px;
+}
+
+.modal-body .hashtags .btn-radio {
+   width: 30%;
+}
+
+/*             Main Content           */
+/*                Lobby               */
+.room-list .card {
+   width: 190px;
+}
+
+.room-list .card:hover {
+   border: 2px solid #E68939;
+}
+
+.room-list .card:hover .card-body{
+   background-color: #E68939;
+}
+
+.room-list .card a {
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+/*                Profile              */
+.profile .profile-body {
+   margin: 10% 0;
+   height: 50vh;
+}
+
+.profile .profile-body .card {
+   background-color: rgba( 255, 255, 255, 0.1);
+}
+
+.profile .profile-privacy, .profile .profile-wallet {
+   height: 30vh;
+}
+
+/*             Gifts Shop & Box             */
+.giftshop-list .card, .giftsbox-list .card {
+   width: 300px;
+   height: 400px;
+}
+
+.giftshop-list .card .card-img-top, .giftsbox-list .card .card-img-top {
+   height: 60%;
+}
+
+.btn-checkout {
+   width: 50%;
+   height: 10%;
+}
+
+/*             Broadcast Room             */
+.broadcast-content, .chatroom-sidebar {
+   height: 100%;
+}
+
+.broadcast-header img {
+   width: 40px;
+   height: 40px;
+   margin-right: 10px;
+   border-radius: 100%;
+}
+
+.chatroom-header {
+   height: 40px;
+}
+
+.chatroom {
+   height: 95%;
+}
+
+.chatroom-chatboard {
+   height: 85%;
+   padding: 10px 0;
+   overflow-y: scroll;
+   border-top: 2px solid rgba( 255, 255, 255, 0.1 );
+   border-bottom: 2px solid rgba( 255, 255, 255, 0.1 );
+}
+
+.chatroom-message small {
+   display: block;
+}
+
+.chatroom-input {
+   height: 15%;
+}
+
+.chatroom-input .chatroom-input-textarea {
+   width: 75%;
+   height: 35px;
+}
+
+.chatroom-input .dropdown-menu {
+   width: 200px;
+   color: #FFFFFF;
+   background-color: #161D29;
+   border: 2px solid rgba( 255, 255, 255, 0.3 );
+}
+
+.chatroom-input .dropdown-menu .row {
+   width: 100%;
+}
+
+/*             Font               */
+@font-face {
+    font-family: Roobert;
+    font-weight: 400;
+    src: url('../fonts/Roobert-Regular-3fe213a3618624fd7b71.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: Roobert;
+    font-weight: 600;
+    src: url('../fonts/Roobert-SemiBold-df85158a0012c224b021.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: Roobert;
+    font-weight: 700;
+    src: url('../fonts/Roobert-Bold-7fda562c82c09fbabec2.woff2') format("woff2");
+}
+
+
+/*          Blue Theme          */
+body.bluetheme {
+   background-color: #161D29;
+}
+
+.bluetheme .top-navbar .navbar {
+   background-color: #121721;
+}
+
+.bluetheme .main .chatroom-sidebar {
+   background-color: #121721;
+}
+/*              Guest CSS              */
+.user-prop {
+   display: none;
+}
